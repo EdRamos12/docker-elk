@@ -93,7 +93,7 @@ services:
   elasticsearch_exporter:
     image: quay.io/prometheuscommunity/elasticsearch-exporter:latest
     command:
-      - '--es.uri=http://elasticsearch:9200'
+      - '--es.uri=http://elastic:changeme@elasticsearch:9200'
     restart: always
     ports:
       - 9114:9114
